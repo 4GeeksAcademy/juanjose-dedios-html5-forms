@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!DOCclass="form-control" TYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <main>
         <div class="container  p-3">
@@ -25,33 +25,33 @@
                     </div>
                     <form method="post">
                         <div class="row">
-                            <div class="col-lg-5 col-md-8 col-xs-12 d-flex  flex-column gap-1 mt-2  ">
-                                <label for="contraseña"> <strong>Card #</strong> </label>
-                                <input type="text" id="contraseña" placeholder="XXXXXXXXXXX" required>
+                            <div class="col-lg-5 col-md-8 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
+                                <label class="form-label" for="contraseña"> <strong>Card #</strong> </label>
+                                <input class="form-control" type="text" id="contraseña" placeholder="XXXXXXXXXXX" required>
                             </div>
                             <div class="col-lg-3 col-md-4 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="cvc"> <strong>CVC #</strong> </label>
-                                <input type="number" id="cvc" placeholder="0000" min="0001" max="9999" required>
+                                <label class="form-label" for="cvc"> <strong>CVC #</strong> </label>
+                                <input class="form-control" type="number" id="cvc" placeholder="0000" min="0001" max="9999" required>
                             </div>
                             <div class="col-lg-4 col-md-8 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="Amount"><strong>Amount €</strong> </label>
-                                <input type="number" id="Amount" placeholder=" Amount" min="1" max="999999">
+                                <label class="form-label" for="Amount"><strong>Amount €</strong> </label>
+                                <input class="form-control" type="number" id="Amount" placeholder=" Amount" min="1" max="999999">
                             </div>
                             <div class="col-lg-6 col-md-9 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="f-name"><strong>First Name</strong></label>
-                                <input type="text" id="f-name">
+                                <label class="form-label" for="f-name"><strong>First Name</strong></label>
+                                <input class="form-control" type="text" id="f-name">
                             </div>
                             <div class="col-lg-6 col-md-9 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="l-name"> <strong>Last name</strong> </label>
-                                <input type="text" id="l-name">
+                                <label class="form-label" for="l-name"> <strong>Last name</strong> </label>
+                                <input class="form-control" type="text" id="l-name">
                             </div>
                             <div class="col-lg-6 col-md-9 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="city"> <strong>City</strong> </label>
-                                <input type="text" id="city">
+                                <label class="form-label" for="city"> <strong>City</strong> </label>
+                                <input class="form-control" type="text" id="city">
                             </div>
                             <div class="col-lg-3 col-md-6 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="state"> <strong>State</strong></label>
-                                <select name="" id="state">
+                                <label class="form-label" for="state"> <strong>State</strong></label>
+                                <select class="form-select" name="" id="state">
                                     <option disabled selected value=""> Pick a state </option>
                                     <option value="Arizona ">Arizona </option>
                                     <option value="Kansas"> Kansas</option>
@@ -59,37 +59,35 @@
                                 </select>
                             </div>
                             <div class="col-lg-3 col-md-6 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
-                                <label for="p-code"><strong> Postal Code </strong></label>
-                                <input type="number" min="00001" max="99999">
+                                <label class="form-label" for="p-code"><strong> Postal Code </strong></label>
+                                <input class="form-control" type="number" min="00001" max="99999">
                             </div>
-                            <div class="col-lg-3 col-md-6 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
+                            <div class="col-lg-6 col-md-6 col-xs-6 d-flex  flex-column gap-1 mt-2 ">
                                 <p> <strong>We accept:</strong> </p>
-                                <div class="forms-checks d-flex flex-row bg bg-secondary gap-3">
+                                <div class="forms-checks d-flex flex-row bg bg-secondary gap-3 text-white p-2 rounded mb-3 " id="fit-content">
 
                                     <div class="form-check">
-                                        <label for="paypal"> <i class="fa-brands fa-paypal"></i> </label>
-                                        <input type="radio" name="pay" id="paypal">
+                                        <label class="form-check-label" for="paypal"> <i class="fa-brands fa-paypal "></i> </label>
+                                        <input class="form-check-input" type="radio" name="pay" id="paypal">
                                     </div>
                                     <div class="form-check">
-                                        <label for="c-card"> <i class="fa-solid fa-credit-card"></i> </label>
-                                        <input type="radio" name="pay" id="c-card">
+                                        <label class="form-check-label" for="c-card"> <i class="fa-solid fa-credit-card "></i> </label>
+                                        <input class="form-check-input" type="radio" name="pay" id="c-card">
                                     </div>
                                     <div class="form-check">
-                                        <label for="a-pay"> <i class="fa-brands fa-apple-pay"></i></label>
-                                        <input type="radio" name="pay" id="a-pay">
+                                        <label class="form-check-label" for="a-pay"> <i class="fa-brands fa-apple-pay"></i></label>
+                                        <input class="form-check-input" type="radio" name="pay" id="a-pay">
                                     </div>
                                     <div class="form-check">
-                                        <label for="g-pay"><i class="fa-brands fa-google-pay"></i> </label>
-                                        <input type="radio" name="pay" id="g-pay">
+                                        <label class="form-check-label" for="g-pay"><i class="fa-brands fa-google-pay"></i> </label>
+                                        <input class="form-check-input" type="radio" name="pay" id="g-pay">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3  col-md-3 col-xs-3 "></div>
-                            <div class="col-lg-6 col-md-9 col-xs-12 d-flex flex-column align-items-start gap-1 mt-2 ">
-                                <label for="Message"><strong>Message</strong></label>
-                                <textarea class="w-100 h-100" name="Message" id="Message"></textarea>
+                            <div class="col-lg-6 col-md-6 col-xs-6 d-flex flex-column align-items-start gap-1 mt-2 mb-3 ">
+                                <label class="floatingTextarea" for="Message"><strong>Message</strong></label>
+                                <textarea class="w-100 h-100 form-control" name="Message" id="Message"></textarea>
                                 <p> Add any notes here. </p>
-                            </div>
                         </div>
                     </form>
                 </div>
