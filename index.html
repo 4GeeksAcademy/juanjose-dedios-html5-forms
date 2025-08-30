@@ -14,16 +14,16 @@
 </head>
 <body>
     <main>
-        <div class="container  p-3">
+        <div class="container  pb-0 pr-3 ps-3 pe-3">
             <div class="card  mt-3">
                 <div class="card-header">
                     <h3> Payment form example</h3>
                 </div>
-                <div class="card-body">
+                <div class="card-body pb-0">
                     <div class="alert alert-danger p-2" role="alert">
                         Some fields are missing
                     </div>
-                    <form method="post">
+                    <form method="post" class="mb-0">
                         <div class="row">
                             <div class="col-lg-5 col-md-8 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
                                 <label class="form-label" for="contraseña"> <strong>Card #</strong> </label>
@@ -89,12 +89,12 @@
                                 <textarea class="w-100 h-100 form-control" name="Message" id="Message"></textarea>
                                 <p> Add any notes here. </p>
                             </div>
-                            <div class="card-footer d-flex justify-content-end gap-2 mt-3">
-                                <button class="btn btn-secondary"> Cancel </button>
-                                <button class="btn btn-primary" type="submit"> Submit </button>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-                </div>
+                <div class="card-footer d-flex justify-content-end gap-2 mt-3 pb-2 mx-0">
+                    <button class="btn btn-secondary"> Cancel </button>
+                    <button class="btn btn-primary" type="submit"> Send </button>
             </div>
         </div>
         </div>
