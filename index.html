@@ -15,7 +15,7 @@
 <body>
     <main>
         <div class="container  pb-0 pr-3 ps-3 pe-3">
-            <div class="card  mt-3 mx-0">
+            <div class="card  mt-3 ">
                 <div class="card-header">
                     <h3> Payment form example</h3>
                 </div>
@@ -24,7 +24,7 @@
                         Some fields are missing
                     </div>
                     <form method="post" class="mb-0">
-                        <div class="row">
+                        <div class="row" id="row-id">
                             <div class="col-lg-5 col-md-8 col-xs-12 d-flex  flex-column gap-1 mt-2 ">
                                 <label class="form-label" for="contraseña"> <strong>Card #</strong> </label>
                                 <input class="form-control" type="text" id="contraseña" placeholder="XXXXXXXXXXX" required>
@@ -67,19 +67,19 @@
                                 <div class="forms-checks d-flex flex-row bg bg-secondary gap-3 text-white p-2 rounded mb-3 " id="fit-content">
 
                                     <div class="form-check">
-                                        <label class="form-check-label" for="paypal"> <i class="fa-brands fa-paypal "></i> </label>
+                                        <label class="form-check-label" for="paypal"> <i class="fa-brands fa-paypal fa-2x "></i> </label>
                                         <input class="form-check-input" type="radio" name="pay" id="paypal">
                                     </div>
                                     <div class="form-check">
-                                        <label class="form-check-label" for="c-card"> <i class="fa-solid fa-credit-card "></i> </label>
+                                        <label class="form-check-label" for="c-card"> <i class="fa-solid fa-credit-card fa-2x"></i> </label>
                                         <input class="form-check-input" type="radio" name="pay" id="c-card">
                                     </div>
                                     <div class="form-check">
-                                        <label class="form-check-label" for="a-pay"> <i class="fa-brands fa-apple-pay"></i></label>
+                                        <label class="form-check-label" for="a-pay"> <i class="fa-brands fa-apple-pay fa-2x"></i></label>
                                         <input class="form-check-input" type="radio" name="pay" id="a-pay">
                                     </div>
                                     <div class="form-check">
-                                        <label class="form-check-label" for="g-pay"><i class="fa-brands fa-google-pay"></i> </label>
+                                        <label class="form-check-label" for="g-pay"><i class="fa-brands fa-google-pay fa-2x"></i> </label>
                                         <input class="form-check-input" type="radio" name="pay" id="g-pay">
                                     </div>
                                 </div>

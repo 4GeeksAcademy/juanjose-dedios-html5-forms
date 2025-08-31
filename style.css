@@ -1,3 +1,11 @@
 #fit-content{
     width: fit-content;
 }
+#row-id{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.alert{
+    margin-left: -4px;
+    margin-right: -4px;
+}
